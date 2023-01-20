@@ -1,0 +1,33 @@
+//Static method in java
+
+class one{
+
+	int roll;
+	String name;
+	//static string
+	static String collage = "ITS";
+
+	static void change(){
+		collage="BBDIT";
+	}
+	one(int r,String n){
+		roll=r;
+		name=n;
+	}
+	void display(){
+		System.out.println(roll+" "+name+" "+collage);
+	}
+
+}
+public class staticmethod{
+
+	public static void main(String args[]){
+		one.change();
+
+		one o1 = new one(111,"Gazal");
+		one o2 = new one(222,"Pawan");
+
+		o1.display();
+		o2.display();
+
+}       }

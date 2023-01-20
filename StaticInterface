@@ -1,0 +1,21 @@
+//static method in interface
+
+interface Drawable{
+    void printm();
+    static int cube(int x){return x*x*x;}
+}
+
+class Rectangle implements Drawable{
+    public void printm(int x){
+        System.out.println("Drawing Rectangle");
+    }
+}
+
+class StaticInterface {
+    public static void main(String[] args){
+        Drawable d = new Drawable();
+        d.printm();
+
+        System.out.println(Drawable.cube(3));
+    }
+}
